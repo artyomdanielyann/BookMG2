@@ -1,0 +1,48 @@
+###
+POST http://127.0.0.1:8080/api/users/user
+Content-Type: application/json
+
+{
+  "username": "Artyom"
+}
+
+
+###
+POST http://127.0.0.1:8080/api/users/collections
+Content-Type: application/json
+
+{
+  "username": "Artyom",
+  "name": "Favorites"
+}
+
+###
+POST http://127.0.0.1:8080/api/users/books
+Content-Type: application/json
+
+{
+  "username": "Artyom",
+  "collectionName": "Favorites",
+  "title": "abc",
+  "author": "a man"
+}
+
+###
+POST http://127.0.0.1:8080/api/users/search
+Content-Type: application/json
+
+{
+  "username": "Artyom"
+}
+
+###
+POST http://127.0.0.1:8080/api/users/books/delete
+Content-Type: application/json
+
+{
+  "username": "Artyom",
+  "collectionName": "Favorites",
+  "title": "abc"
+}
+
+
